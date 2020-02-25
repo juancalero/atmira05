@@ -10,18 +10,22 @@ import { AppComponent } from './app.component';
 import { UserListComponent } from './user-list/user-list.component';
 
 import { UserService } from './user.service';
+import { AddUserComponent } from './add-user/add-user.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
     AppComponent,
     UserListComponent,
+    AddUserComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     SlimLoadingBarModule,
     ReactiveFormsModule,
-    HttpClientModule
+    HttpClientModule,
+    FormsModule
   ],
   providers: [ UserService ],
   bootstrap: [AppComponent]
