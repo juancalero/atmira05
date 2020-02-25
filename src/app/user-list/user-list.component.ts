@@ -12,7 +12,7 @@ import { UserService } from '../user.service';
 export class UserListComponent implements OnInit {
 
   users: User[];
-
+//hola
   constructor(private route: ActivatedRoute,
     private router: Router,
     private bs: UserService) { }
